@@ -3,20 +3,24 @@
 void drawTable(void);
 
 
-char table[2][2] = {
-    {'0', '0', '0'},
-    {'0', '0', '0'},
-    {'0', '0', '0'},
+char table[3][3] = {
+    {'a', 'a', 'a'},
+    {'a', 'a', 'a'},
+    {'a', 'a', 'a'}
 };
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    drawTable();
     return 0;
 }
 
 void drawTable(void) {
-    printf("");
+    for (int i = 0; i <= 2; i++) {
+        for(int j = 0; j <= 2; j++) {
+            printf("%c", table[i][j]);
+        }
+    }
 }
 
 
