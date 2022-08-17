@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 void drawTable(void);
-
+void prompt(void);
 
 char table[3][3] = {
-    {'a', 'a', 'a'},
-    {'a', 'a', 'a'},
-    {'a', 'a', 'a'}
+    {'1', '2', '3'},
+    {'4', '5', '6'},
+    {'7', '8', '9'}
 };
 
 int main(int argc, char const *argv[])
@@ -22,6 +22,10 @@ void drawTable(void) {
         }
         printf("\n");
     }
+}
+
+void prompt(void) {
+    printf("Enter a");
 }
 
 
