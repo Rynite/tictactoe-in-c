@@ -20,6 +20,7 @@ void drawTable(void) {
         for(int j = 0; j <= 2; j++) {
             printf("%c", table[i][j]);
         }
+        printf("\n");
     }
 }
 
