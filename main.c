@@ -3,7 +3,7 @@
 
 int drawTable(void);
 int prompt(void);
-int fill_chosen_index(int index);
+// int fill_chosen_index(char index);
 
 char *table[3][3] = {
     {"1", "2", "3"},
@@ -11,7 +11,7 @@ char *table[3][3] = {
     {"7", "8", "9"}
 };
 
-int chosen_index;
+char chosen_index;
 
 int main(int argc, char const *argv[])
 {
@@ -33,12 +33,12 @@ int drawTable(void) {
 
 int prompt(void) {
     printf("Enter the number where you want to insert your X \n");
-    scanf("%i", &chosen_index);
+    scanf("%c", &chosen_index);
     
     // Look for that number, check if it's previously chosen or not, otherwise fill it.
-    for (int i = 0; i <=2; i++) {
+    for (int i = 0; i <= 2; i++) {
         for (int j = 0; j <= 2; j++) {
-            if (strcmp(table[i][j], "432") == 0) {
+            if (strcmp(table[i][j], chosen_index) == 0) {
                 printf("Success");
             }
         }
