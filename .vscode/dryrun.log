@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/rynite/tictactoe_in_c'
+gcc -c app.c -o app.o
+gcc -o main app.o -g -Wall -Wextra
+make: Leaving directory '/home/rynite/tictactoe_in_c'
+ 

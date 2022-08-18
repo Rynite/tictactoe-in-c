@@ -11,6 +11,7 @@ void askComputer(void);
 void checkPlayerWinner(void);
 void checkComputerWinner(void);
 void clearScreen(void);
+void checkFreeSpaces(void);
 
 char board[3][3] = {
     {'#', '#', '#'},
@@ -56,6 +57,9 @@ void drawBoard(void) {
 }
 
 void askPlayer(void) {
+
+    checkFreeSpaces();
+
     unsigned int row;
     unsigned int column;
 
@@ -66,7 +70,7 @@ void askPlayer(void) {
     scanf("%d", &column);
 
     while (board[row][column] != '#') {
-        printf("\t\t [[ Sorry, pick a different position :( ]]\n");
+        printf("\t\t\t\tSorry, pick a different position :(\n");
         printf("Which row? ");
         scanf("%d", &row);
         printf("Which column ");
@@ -79,6 +83,7 @@ void askPlayer(void) {
 
 void askComputer(void) {
 
+    checkFreeSpaces();
 
     srand(time(0));
 
@@ -110,6 +115,26 @@ void checkPlayerWinner(void) {
     // Check diagonal lines
     else if (board[2][0] == 'O' && board[1][1] == 'O' && board[0][2] == 'O' || board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O') {
         winner = "player";
+    }
+}
+
+void checkFreeSpaces(void) {
+    
+    int freeSpaces = 0;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (board[i][j] == '#') {
+                freeSpaces++;
+            } else {
+                continue;
+            }
+        }
+    }
+
+    if (freeSpaces == 0) {
+        printf("No more empty spaces.\n");
+        exit(0);
     }
 }
 
