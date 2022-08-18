@@ -22,13 +22,14 @@ char board[3][3] = {
 char *winner = " ";
 
 
-
 int main(int argc, char const *argv[])
 {
     do {
         drawBoard();
         askPlayer();
         checkPlayerWinner();
+        clearScreen();
+        drawBoard();
         askComputer();
         checkComputerWinner();
         clearScreen();
@@ -65,8 +66,11 @@ void askPlayer(void) {
     scanf("%d", &column);
 
     while (board[row][column] != '#') {
-        printf("*****************\n");
-        printf("\n\n [[ Sorry, pick a different position :( ]]");
+        printf("\t\t [[ Sorry, pick a different position :( ]]\n");
+        printf("Which row? ");
+        scanf("%d", &row);
+        printf("Which column ");
+        scanf("%d", &column);
     }
 
     board[row][column] = 'O';
@@ -75,20 +79,19 @@ void askPlayer(void) {
 
 void askComputer(void) {
 
-    printf("It's the computer's turn!\n");
 
     srand(time(0));
 
-    unsigned int row;
-    unsigned int column;
+    int row = 0;
+    int column = 0;
     
-    do
-    {
+    while (board[row][column] != '#') {
         row = rand() % 3;
         column = rand() % 3;
-    } while (board[row][column] == '#' && board[row][column] != 'X');
-
-    printf("Computer chose position, [%d][%d]\n", row, column);
+        if (board[row][column] == '#') {
+            break;
+        }
+    }
 
     board[row][column] = 'X';
 }
