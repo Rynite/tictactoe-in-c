@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 18 18:46:48 2022
+# Make data base, printed on Thu Aug 18 22:05:57 2022
 
 # Variables
 
@@ -28,8 +28,6 @@ VSCODE_CWD = /home/rynite
 LC_ADDRESS = en_US.UTF-8
 # default
 MAKE_COMMAND := make
-# environment
-GOPATH = /home/rynite/go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -89,13 +87,13 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 1343
+VSCODE_PID = 4094
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/rynite-pc:@/tmp/.ICE-unix/587,unix/rynite-pc:/tmp/.ICE-unix/587
+SESSION_MANAGER = local/rynite-pc:@/tmp/.ICE-unix/598,unix/rynite-pc:/tmp/.ICE-unix/598
 # automatic
 *F = $(notdir $*)
 # environment
@@ -131,7 +129,7 @@ MOTD_SHOWN = pam
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = aa88add8825145bb915eaee204663317
+INVOCATION_ID = f89a2a9ef7f9459ba0935b87c5700e52
 # environment
 LC_TELEPHONE = en_US.UTF-8
 # automatic
@@ -161,7 +159,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 758
+SYSTEMD_EXEC_PID = 749
 # environment
 EDITOR = nano
 # environment
@@ -175,7 +173,7 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-MANAGERPID = 518
+MANAGERPID = 529
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
@@ -187,9 +185,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 1)
 CFLAGS = -g
 # environment
-GOMODCACHE = /home/rynite/go/pkg/mod
-# environment
-JOURNAL_STREAM = 8:22844
+JOURNAL_STREAM = 8:14227
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -206,8 +202,6 @@ VSCODE_IPC_HOOK = /run/user/1000/vscode-03b814b3-1.70.1-main.sock
 XDG_SESSION_ID = 1
 # environment
 XCURSOR_SIZE = 24
-# environment
-GOPROXY = https://proxy.golang.org,direct
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -231,7 +225,7 @@ KDE_FULL_SESSION = true
 # environment
 LC_IDENTIFICATION = en_US.UTF-8
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=5/144=3%
+# Load=107/1024=10%, Rehash=0, Collisions=4/141=3%
 
 # Pattern-specific Variable Values
 
@@ -239,9 +233,9 @@ LC_IDENTIFICATION = en_US.UTF-8
 
 # Directories
 
-# . (device 2049, inode 7998178): 8 files, no impossibilities.
+# . (device 2049, inode 7998178): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -280,12 +274,12 @@ all: main app.o
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
 main: app.o
- 
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-08-18 18:55:24.809966807
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 #  recipe to execute (from 'Makefile', line 7):
 	$(CC) -o main $^ $(CFLAGS) -Wall -Wextra
@@ -293,7 +287,7 @@ main: app.o
 # Not a target:
 app.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-18 18:38:48.534921077
+#  Last modified 2022-08-18 18:57:20.494701727
 #  File has been updated.
 #  Successfully updated.
 
@@ -311,7 +305,7 @@ app.c:
 app.o: app.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2022-08-18 18:55:24.763302172
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -346,9 +340,9 @@ app.o: app.c
 # strcache buffers: 1 (0) / strings = 17 / storage = 133 B / avg = 7 B
 # current buf: size = 8162 B / used = 133 B / count = 17 / avg = 7 B
 
-# strcache performance: lookups = 33 / hit rate = 48%
+# strcache performance: lookups = 35 / hit rate = 51%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/33=0%
-# Finished Make data base on Thu Aug 18 18:46:48 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/35=0%
+# Finished Make data base on Thu Aug 18 22:05:57 2022
 
  

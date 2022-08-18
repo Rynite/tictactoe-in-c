@@ -1,15 +1,17 @@
 CFLAGS = -g
 CC = gcc
 
-all: main app.o
+NAME = main
 
-main: app.o
-	$(CC) -o main $^ $(CFLAGS) -Wall -Wextra
+all: $(NAME) app.o
+
+$(NAME): app.o
+	$(CC) -o $@ $^ $(CFLAGS) -Wall -Wextra
 
 app.o: app.c
-	$(CC) -c $^ -o app.o
+	$(CC) -c $^ -o $@
 
 .PHONY: clean
 
 clean:
-	rm -rf app.o main
+	rm -rf app.o $(NAME)
