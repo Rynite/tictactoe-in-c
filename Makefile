@@ -6,7 +6,7 @@ NAME = main
 all: $(NAME) app.o
 
 $(NAME): app.o
-	$(CC) -o $@ $^ $(CFLAGS) -Wall -Wextra
+	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS) -Wall -Wextra
 
 app.o: app.c
 	$(CC) -c $^ -o $@
