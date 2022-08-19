@@ -25,6 +25,8 @@ char *winner = " ";
 
 int main(int argc, char const *argv[])
 {
+    clearScreen();
+
     do {
         drawBoard();
         askPlayer();

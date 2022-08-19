@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug 19 18:32:26 2022
+# Make data base, printed on Fri Aug 19 18:34:52 2022
 
 # Variables
 
@@ -103,7 +103,7 @@ MAKEFILE_LIST := Makefile
 # environment
 ZSH = /home/rynite/.oh-my-zsh
 # environment
-VSCODE_PID = 24150
+VSCODE_PID = 25172
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -286,6 +286,7 @@ LC_IDENTIFICATION = en_US.UTF-8
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-08-18 22:12:03.860943953
 #  File has been updated.
 #  Successfully updated.
@@ -353,6 +354,6 @@ app.o: app.c
 # strcache performance: lookups = 34 / hit rate = 50%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/34=0%
-# Finished Make data base on Fri Aug 19 18:32:26 2022
+# Finished Make data base on Fri Aug 19 18:34:52 2022
 
  
