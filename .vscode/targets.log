@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 18 22:05:57 2022
+# Make data base, printed on Fri Aug 19 18:30:34 2022
 
 # Variables
 
@@ -19,17 +19,23 @@ NO_AT_BRIDGE = 1
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/rynite/.gtkrc:/home/rynite/.config/gtkrc
 # environment
+KONSOLE_DBUS_SERVICE = :1.132
+# environment
 LC_NAME = en_US.UTF-8
 # environment
 LC_NUMERIC = en_US.UTF-8
 # environment
-VSCODE_CWD = /home/rynite
+VSCODE_CWD = /home/rynite/tictactoe_in_c
+# environment
+WINDOWID = 62914567
 # environment
 LC_ADDRESS = en_US.UTF-8
 # default
 MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
+# environment
+KONSOLE_VERSION = 220403
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -39,11 +45,15 @@ PWD = /home/rynite/tictactoe_in_c
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
 MAIL = /var/spool/mail/rynite
 # environment
 XDG_DATA_DIRS = /home/rynite/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 # environment
 OLDPWD = /home/rynite
+# environment
+KONSOLE_DBUS_WINDOW = /Windows/1
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
@@ -60,12 +70,14 @@ XAUTHORITY = /home/rynite/.Xauthority
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+COLORFGBG = 15;0
 # makefile
 MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/rynite/tictactoe_in_c
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -79,6 +91,8 @@ XDG_CONFIG_DIRS = /home/rynite/.config/kdedefaults:/etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
+P9K_SSH = 0
+# environment
 XCURSOR_THEME = Breeze_Snow
 # environment
 XDG_SESSION_DESKTOP = KDE
@@ -87,13 +101,15 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 4094
+ZSH = /home/rynite/.oh-my-zsh
+# environment
+VSCODE_PID = 23384
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/rynite-pc:@/tmp/.ICE-unix/598,unix/rynite-pc:/tmp/.ICE-unix/598
+SESSION_MANAGER = local/rynite-pc:@/tmp/.ICE-unix/586,unix/rynite-pc:/tmp/.ICE-unix/586
 # automatic
 *F = $(notdir $*)
 # environment
@@ -103,6 +119,8 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
+P9K_TTY = old
+# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
@@ -111,15 +129,19 @@ SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 2
+# environment
+PROFILEHOME = 
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/rynite/.spicetify
 # default
 MAKEFILES := 
+# environment
+LANGUAGE = 
 # environment
 LC_MONETARY = en_US.UTF-8
 # environment
@@ -129,21 +151,27 @@ MOTD_SHOWN = pam
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = f89a2a9ef7f9459ba0935b87c5700e52
+INVOCATION_ID = 22722a48c0ef41c69161d12185a1de85
 # environment
 LC_TELEPHONE = en_US.UTF-8
 # automatic
 ?F = $(notdir $?)
 # environment
 KDE_APPLICATIONS_AS_SCOPE = 1
+# makefile (from 'Makefile', line 4)
+NAME = main
 # environment
 XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = KDE
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
 # automatic
 +F = $(notdir $+)
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+LESS = -R
 # environment
 DESKTOP_SESSION = plasma
 # environment
@@ -159,7 +187,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 749
+SYSTEMD_EXEC_PID = 743
 # environment
 EDITOR = nano
 # environment
@@ -173,9 +201,13 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-MANAGERPID = 529
+KONSOLE_DBUS_SESSION = /Sessions/1
+# environment
+MANAGERPID = 517
 # environment
 LC_MEASUREMENT = en_US.UTF-8
+# environment
+PAGER = less
 # environment
 _ = /usr/bin/make
 # environment
@@ -185,7 +217,9 @@ XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 1)
 CFLAGS = -g
 # environment
-JOURNAL_STREAM = 8:14227
+COLORTERM = truecolor
+# environment
+JOURNAL_STREAM = 8:22952
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -199,6 +233,8 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-03b814b3-1.70.1-main.sock
 # environment
+TERM = xterm-256color
+# environment
 XDG_SESSION_ID = 1
 # environment
 XCURSOR_SIZE = 24
@@ -211,9 +247,13 @@ SUFFIXES :=
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 0
 # environment
+_P9K_TTY = /dev/pts/0
+# environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SHELL_SESSION_ID = 7bd088e3ffd243e7b984896293f22590
 # environment
 KDE_SESSION_VERSION = 5
 # default
@@ -225,7 +265,7 @@ KDE_FULL_SESSION = true
 # environment
 LC_IDENTIFICATION = en_US.UTF-8
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=4/141=3%
+# Load=127/1024=12%, Rehash=0, Collisions=10/159=6%
 
 # Pattern-specific Variable Values
 
@@ -234,6 +274,7 @@ LC_IDENTIFICATION = en_US.UTF-8
 # Directories
 
 # . (device 2049, inode 7998178): 10 files, no impossibilities.
+ 
 
 # 10 files, no impossibilities in 1 directories.
 
@@ -246,7 +287,7 @@ LC_IDENTIFICATION = en_US.UTF-8
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-18 18:46:38.933895957
+#  Last modified 2022-08-18 22:12:03.860943953
 #  File has been updated.
 #  Successfully updated.
 
@@ -255,8 +296,8 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 15):
-	rm -rf app.o main
+#  recipe to execute (from 'Makefile', line 17):
+	rm -rf app.o $(NAME)
 
 # Not a target:
 .DEFAULT:
@@ -269,20 +310,15 @@ all: main app.o
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  Successfully updated.
 
 main: app.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-18 18:55:24.809966807
+#  Last modified 2022-08-18 22:12:12.127373669
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
- 
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
-#  recipe to execute (from 'Makefile', line 7):
-	$(CC) -o main $^ $(CFLAGS) -Wall -Wextra
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 9):
+	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS) -Wall -Wextra
 
 # Not a target:
 app.c:
@@ -291,12 +327,6 @@ app.c:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 .PHONY: clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -304,33 +334,14 @@ app.c:
 
 app.o: app.c
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  Last modified 2022-08-18 18:55:24.763302172
+#  Last modified 2022-08-18 22:12:12.087374792
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := app.o
-# automatic
-# * := 
-# automatic
-# < := app.c
-# automatic
-# + := app.c
-# automatic
-# % := 
-# automatic
-# ^ := app.c
-# automatic
-# ? := app.c
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/13=15%
-#  recipe to execute (from 'Makefile', line 10):
-	$(CC) -c $^ -o app.o
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 12):
+	$(CC) -c $^ -o $@
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/28=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -340,9 +351,9 @@ app.o: app.c
 # strcache buffers: 1 (0) / strings = 17 / storage = 133 B / avg = 7 B
 # current buf: size = 8162 B / used = 133 B / count = 17 / avg = 7 B
 
-# strcache performance: lookups = 35 / hit rate = 51%
+# strcache performance: lookups = 34 / hit rate = 50%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/35=0%
-# Finished Make data base on Thu Aug 18 22:05:57 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/34=0%
+# Finished Make data base on Fri Aug 19 18:30:34 2022
 
  

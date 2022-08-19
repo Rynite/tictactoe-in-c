@@ -69,7 +69,7 @@ void askPlayer(void) {
     printf("Which column ");
     scanf("%d", &column);
 
-    while (board[row][column] != '#') {
+    while (board[row-1][column-1] != '#') {
         printf("\t\t\t\tSorry, please pick a different position :(\n");
         printf("Which row? ");
         scanf("%d", &row);
@@ -77,7 +77,7 @@ void askPlayer(void) {
         scanf("%d", &column);
     }
 
-    board[row][column] = 'O';
+    board[row-1][column-1] = 'O';
 
 }
 
